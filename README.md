@@ -15,6 +15,8 @@ This project is a Spring Boot application that exposes various APIs. It uses Doc
 - **Docker**: [Install Docker](https://docs.docker.com/get-docker/)
 - **Maven**: [Install Maven](https://maven.apache.org/install.html) (optional, for building without Docker)
 
+## Notes:
+For the provided request I have considered Nomralized version of the database and that's why I have splitted the data into 3 relations consisting of Supplier relation, Manufacturing relation and Supplier-Manufacturing relation, this way we would have used Normalization to avoid Redundancy of the data storage.
 ## Setup
 
 ### 1. Clone the Repository
@@ -34,4 +36,5 @@ docker build -t makerShark .
 ```bash
 docker run -d -p 8080:8080 makerShark
 ```
+
 
